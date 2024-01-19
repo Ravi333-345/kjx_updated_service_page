@@ -15,7 +15,7 @@ import footer from '../../assets/otherImage/footer-corner.png'
 const FooterSection = () => {
     return (
         <div>
-            <div class="bg-white -mt-10 -mb-10 bg-gradient-to-t from-teal-700 to-emerald-100">
+            <div class="bg-white -mt-12 -mb-5 bg-gradient-to-t from-teal-700 to-emerald-100">
                 <div class="mx-auto max-w-7xl px-2 lg:px-2">
                     <div class="mx-auto mt-16 max-w-2xl  sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
 
@@ -24,13 +24,13 @@ const FooterSection = () => {
                             <div class="flex  gap-x-4 mt-1 ">
                                 <div class="h-px flex-auto bg-gray-100"></div>
                             </div>
-                            <ul role="list" class="mt-2 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                            <ul role="list" class="my-2 grid grid-cols-1 gap-4 text-sm leading-6 text-orange-700 sm:grid-cols-2 sm:gap-6">
                                 <Div>
                                     <Holder >
                                         <Icon>
                                             <FaLocationDot />
                                         </Icon>
-                                        <Spans> KANTI SADAN , KURTHAUL BAGICHA , KURTHAUL PATNA-804453</Spans>
+                                        <Spans>PATNA, BIHAR, 804453</Spans>
                                     </Holder>
                                     <Holder className="mt-1">
                                         <Icon>
@@ -49,11 +49,11 @@ const FooterSection = () => {
                                             <FaPhoneAlt />
                                         </Icon>
                                         <Hold>
-                                            <P>
+                                            <p>
                                                 <Icons src={indian} alt="flag" />
 
                                                 <Span >(+91) 9661087999 </Span>
-                                            </P>
+                                            </p>
 
 
                                         </Hold>
@@ -66,7 +66,7 @@ const FooterSection = () => {
                                 <div class="mx-auto max-w-lg px-8">
                                     <img src={logo} />
 
-                                    <p class="mt-1 text-lg leading-5 text-white">We Believe In Maximizing The Output</p>
+                                    <p class="ml-1 text-lg leading-3 text-black">WE BELIEVE IN MAXIMIZING THE OUTPUT</p>
                                     <div class="flex sm:justify-center space-x-6 mt-5 ">
                                         <a href="https://www.facebook.com/KJXSOFTTECH2020" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-500 bg-white p-2 rounded-lg">
                                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -209,14 +209,14 @@ const Ul = styled.div`
 
 const Spans = styled.span`
     width:80%;
-    color:#fff;
+    color:#131217;
     font-size: 16px;
 `
 
 const Span = styled.span`
     margin:10px 0px;
     width:70%;
-    color:#fff;
+    color:#1a1919;
     word-spacing:5px;
     font-size: 16px;
     display: flex;

@@ -19,7 +19,7 @@ const ContactUs = () => {
         let url = `https://wa.me/9661087999`;
         window.open(url);
     }
-    return (
+    return ( 
 
         <div>
             <div className="bg-[url('https://i.ibb.co/48MgFp8/flower-bg-1.png')] bg-cover bg-center h-[800px] ">
