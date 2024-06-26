@@ -467,6 +467,7 @@ const OurServices = () => {
       image: dataeng,
       name: "Data Engineering",
       additionalImages: [datastore, dataprocess, datadoc, dataint], 
+    },
     {
       image: dataScience,
       name: "AI / ML",
