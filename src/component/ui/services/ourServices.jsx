@@ -539,12 +539,13 @@ const ContentWrapper = styled.div`
 `;
 
 const CardsContainer = styled.div`
-  display: flex;
+display: grid;
   justify-content: center;
-  gap: 20px; 
-  padding: 5px; 
+  gap: 20px;
+  padding: 5px;
   position: relative;
-  z-index: 100; 
+  z-index: 100;
+  grid-template-columns: 1fr 1fr auto;
 `;
 
 const Card = styled.div`
@@ -561,22 +562,22 @@ const Card = styled.div`
   cursor: pointer;
   transition: transform 0.4s, box-shadow 0.3s, margin 0.3s;
   margin-bottom: 20px;
-  z-index: 1; 
+  z-index: -5; 
 
   &:hover {
-    transform: scale(1.2); 
+    transform: scale(0.9); 
     box-shadow: 0px 0px 15px grey;
     z-index: 100; 
-    margin: 0 10px; 
-    gap:px;
+    // margin: 10px 10px; 
+    gap: 10px;
   }
 
   ${(props) =>
     !props.isHovered &&
     `
     transform: scale(0.8); 
-    margin: 0 -30px; 
-    gap: 5px;
+    // margin: 25px -30px; 
+    // gap: 5px;
   `}
 `;
 
@@ -622,12 +623,14 @@ const ImageWrapper = styled.div`
   height: 100%;
 
   img {
-    width: 400px;
+    width: 450px;
     height: 100%;
-    object-fit: cover;
+object-fit: cover;
+    
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    z-index: 10; 
+    z-index: -1; 
+
   }
 `;
 
@@ -647,19 +650,19 @@ const ServiceName = styled.p`
 
 const AdditionalInfo = styled.div`
   position: absolute;
-  top: 100%; 
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  width:100%;
+  top: 100%;   
+  left: 58%;
+  transform: translateX(-50%);  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 10; 
   transition: top 0.3s ease; 
 
   ${Card}:hover & {
-    top: 0; 
+    top: -4.5rem; 
   }
 `;
 
@@ -667,8 +670,8 @@ const TopItems = styled.div`
   display: flex;
   justify-content: space-evenly;
   gap: 150px; 
-  top:0px;
-  margin-bottom: 20px; 
+  top:-10px;
+  margin-bottom: 6rem; 
 `;
 
 const BottomItems = styled.div`
@@ -687,11 +690,11 @@ const AdditionalCard = styled.div`
   transition: transform 0.2s ease-in-out;
 
   img {
-    width: 45%;
+    width: 50%;
     height: 60%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-    z-index: 100; 
+    // z-index: 100; 
   }
 
   &:hover {
